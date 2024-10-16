@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL</title>
+</head>
+<style>
+    .portal-button{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <img src="../icons/register-black.png" alt="register icon" id="register" class="portal-button" onclick="movePortal(this.id)">
+    <img src="../icons/student-black.png" alt="student icon" id="student" class="portal-button" onclick="movePortal(this.id)">
+    <img src="../icons/leader-black.png" alt="leader icon" id="leader" class="portal-button" onclick="movePortal(this.id)">
+    <img src="../icons/faculty-black.png" alt="faculty icon" id="faculty" class="portal-button" onclick="movePortal(this.id)">
+
+    <script>
+
+        function movePortal(id){
+            switch(id){
+                case "register":
+                    window.location.href="../super_admin_ds.php";
+                break;
+                case "student":
+                    window.location.href="../super_admin_ds.php";
+                break;
+                case "leader":
+                    window.location.href="../super_admin_ds.php";
+                break;
+                case "faculty":
+                    window.location.href="../super_admin_ds.php";
+                break;
+                default:
+                    alert("An error occured! Please Try Again!");
+                break;
+            }
+        }
+
+        
+    </script>
+</html>
